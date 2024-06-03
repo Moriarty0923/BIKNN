@@ -30,11 +30,14 @@ GPU version:
 conda install faiss-gpu -c pytorch # For CUDA
 ```
 
-The data we used in the paper can be found here (https://github.com/roeeaharoni/unsupervised-domain-clusters)
+## Data
+The data we used in the paper can be found here [multi-domain de-en dataset](https://github.com/roeeaharoni/unsupervised-domain-clusters)
+
+WMT19 data can be found [wmt19](https://github.com/facebookresearch/fairseq/blob/main/examples/wmt19/README.md)
 
 
-
-To facilitate the reproducing the result, you can download the cached datastore and generate code snippets by:
+## Get Datastore and Combiner
+You can download the cached datastore and trained combiner generate code snippets by:
 ```bash
 cd knnbox-scripts/knntranx_adaptive
 # step 1. download datastores
@@ -45,13 +48,18 @@ bash inference.sh
 
 To generate the code, using the following command:
 ```bash
-cd knnbox-scripts/knntranx_adaptive
+cd knnbox-scripts
 # step 1. build datastore
-bash build_datastore.sh
-# step 2. train meta-k network
-bash train_metak.sh
-# step 3. inference
+bash build.sh
+# step 2. renew datastore
+bash renew.sh
+# step 3. train metanetwork
+bash train_metanetwork
+# step 4. inference 
 bash inference.sh
 ```
 
-This code is used for producing all results in the paper. We will release a cleaner version of the code soon;
+
+The code is primarily implemented through [knn-mt](https://github.com/urvashik/knnmt) and [knnbox](https://github.com/NJUNLP/knn-box)
+kNNTRANX is a retrieval-based code generation framework, primarily implemented through [knnbox](https://github.com/NJUNLP/knn-box).
+ We will release a cleaner version in future;
