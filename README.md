@@ -60,6 +60,5 @@ bash inference.sh
 ```
 
 
-The code is primarily implemented through [knn-mt](https://github.com/urvashik/knnmt) and [knnbox](https://github.com/NJUNLP/knn-box)
-kNNTRANX is a retrieval-based code generation framework, primarily implemented through [knnbox](https://github.com/NJUNLP/knn-box).
- We will release a cleaner version in future;
+The code is primarily implemented through [knn-mt](https://github.com/urvashik/knnmt) and [knnbox](https://github.com/NJUNLP/knn-box).
+We will release a cleaner version in future;
