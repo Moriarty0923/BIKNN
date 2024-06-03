@@ -37,14 +37,14 @@ WMT19 data can be found [wmt19](https://github.com/facebookresearch/fairseq/blob
 
 
 ## Get Datastore and Combiner
-You can download the cached datastore and trained combiner generate code snippets by:
+You can download the cached datastore and trained combiner at:
+
+[HuggingFace](https://huggingface.co/Moriarty0923/Biknn)
 ```bash
-cd knnbox-scripts/knntranx_adaptive
-# step 1. download datastores
-bash get_datastore.sh
-# step 2. inference
-bash inference.sh
+# inference 
+bash knnbox-scripts/inference.sh
 ```
+You can download the datastore and pre-trained combiner and put them in the according dir, change the path in the script to your own path.
 
 To generate the code, using the following command:
 ```bash
